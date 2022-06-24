@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Random Cats</title>
+</head>
+<body>
+    <header>
+        <h1 class="card_title">Cats App</h1>
+    </header>
+    <main>
+        <span id="error" class="error-container"></span>
+
+        <section class="card-container">
+            <h2>RANDOM CATS</h2>
+            <div class="random-container">
+                <article class="card_random-cat">
+                    <img alt="Cat Random" class="card_image" id="img1">
+                    <button id="buttonSaveCat1">
+                        Save cat to favorites
+                    </button>
+                </article>
+    
+                <article class="card_random-cat">
+                    <img alt="Cat Random" class="card_image" id="img2">
+                    <button id="buttonSaveCat2">
+                        Save cat to favorites
+                    </button>
+                </article>            
+            </div>
+            <button class="card_button" onclick="loadRandomCats()">UPLOAD IMAGE</button>
+        </section>
+
+        <section id="uploadingCat" class="form_uploding-cat">
+            <h2>Upload a photo of your cat</h2>
+
+            <form id="uploadingForm" class="upload-photo">
+                <input id="File" type="file" name="file" />
+                <button type="button" onclick="uploadCatPhoto()">Upload photo</button>
+            </form>
+        </section>
+
+        <section id="favoritesCats" class="favoriteCats-container">
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./mainCopy.js"></script>
+</body>
+</html>

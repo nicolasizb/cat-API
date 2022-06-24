@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Potta+One&display=swap" rel="stylesheet">
+    <title>APP CAT</title>
+</head>
+<body>
+    <header>
+        <h1>APP CAT</h1>
+    </header>
+    <main>
+        <section class="container_title-random">
+            <h2>RANDOM CATS</h2>
+        </section>
+        <section class="container_random-cats">
+            <div class="random-cats">
+                <img id="imageRandom1" alt="">
+                <button id="saveFavoriteCat1">Save cat in favorites</button>
+            </div>
+            <div class="random-cats">
+                <img id="imageRandom2" alt="">
+                <button id="saveFavoriteCat2">Save cat in favorites</button>
+            </div>
+        </section>
+        <section class="container-button_random-cats"> 
+            <button id="buttonLoadCats" onclick="loadRandomCats()">LOAD CATS</button>
+        </section>
+
+        <section class="container_upload-image">
+            <form action="upload-image">
+                <input type="file" name="file" id="file" onchange="loadImagePreview()" />
+                <figure class="container_image-preview">
+                    <img id="preview" alt="image">
+                </figure>
+                <button id="buttonUploadImage">Upload image</button>
+            </form>
+        </section>
+
+        <article class="container_favorite-cats" id="favorite-cats">
+
+        </article>
+    </main>
+    <footer>
+        <section>
+            <p>Made by Nicolas Izquierdo</p>
+            <p>Copyright © 2022 Nicolas izquierdo</p>
+        </section>
+    </footer>
+    <script src="./main.js"></script>
+</body>
+</html>

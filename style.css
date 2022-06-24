@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --COLOR1: #ffffbf;
+    --COLOR2: #ce6c37;
+    --COLOR3: #412b19;
+    --font: cursive;
+}
+body {
+    width: 100%;
+    background-color: var(--COLOR1);
+    font-size: 62.5%;
+    font-family: var(--font);
+}
+header {
+    display: flex;
+    justify-content: center;
+    height: 10vh;
+    padding: 1rem;
+    background-color: var(--COLOR3);
+    color: var(--COLOR1);
+}
+main {
+    color: var(--COLOR3);
+}
+main .container_title-random {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    font-size: 1.4rem;
+    color: var(--COLOR3);
+}
+main .container_random-cats {
+    display: flex;
+    justify-content: center;
+    padding: 1rem 3rem 1.5rem;
+}
+main .random-cats {
+    display: flex;
+    flex-direction: column;
+    margin: 0 2rem;
+}
+main .random-cats img {
+    width: 20rem;
+    height: 20rem;
+    margin: 0 0 0.3rem;
+    border-radius: 0.6rem;
+    border: solid 0.1rem white;
+    object-fit: cover;
+}
+main .random-cats button {
+    min-width: 10rem;
+    padding: 0.3rem;
+    background-color: var(--COLOR3);
+    border: black 0.1rem solid;
+    border-radius: 0.6rem;
+    font-family: var(--font);
+    font-weight: bold;
+    letter-spacing: 0.02rem;
+    color: var(--COLOR1);
+    cursor: pointer;
+}
+main .random-cats button:hover {
+    background-color: var(--COLOR1);
+    color: var(--COLOR3);
+}
+main .container-button_random-cats {
+    display: flex;
+    justify-content: center;
+    margin: 0 0 5rem;
+}
+main .container-button_random-cats button {
+    padding: 0.6rem 3rem;
+    background-color: var(--COLOR2);
+    border: black 0.1rem solid;
+    border-radius: 0.6rem;
+    font-size: 1rem;
+    font-family: var(--font);
+    font-weight: bold;
+    letter-spacing: 0.02rem;
+    color: var(--COLOR1);
+    cursor: pointer;
+}
+main .container-button_random-cats button:hover {
+    background-color: var(--COLOR1);
+    color: var(--COLOR3);
+}
+main .container_upload-image {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: 0 0 3rem;
+}
+main .container_upload-image form {
+    display: flex;
+    flex-direction: column;
+}
+main .container_upload-image form input {
+    padding: 0.2rem;
+    background-color: var(--COLOR2);
+    border: black 0.1rem solid;
+    border-radius: 0.6rem;
+    font-size: 0.8rem;
+    font-family: var(--font);
+    font-weight: bold;
+    letter-spacing: 0.02rem;
+    color: var(--COLOR1);
+    cursor: pointer;
+}
+main .container_upload-image form input:hover {
+    background-color: var(--COLOR1);
+    color: var(--COLOR2);
+}
+main .container_image-preview img {
+    display: flex;
+    margin: 0 auto;
+    max-width: 12rem;
+    max-height: 12rem;
+    min-width: 10rem;
+    min-height: 10rem;
+    background-image: url(img/584abf102912007028bd9332.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    object-fit: cover;
+    border-left: solid 0.1rem var(--COLOR3);
+    border-right: solid 0.1rem var(--COLOR3);
+}
+main .container_upload-image form button {
+    margin: 0 0 0;
+    padding: 0.2rem;
+    background-color: var(--COLOR3);
+    border: black 0.1rem solid;
+    border-radius: 0.6rem;
+    font-family: var(--font);
+    font-weight: bold;
+    letter-spacing: 0.02rem;
+    color: var(--COLOR1);
+    cursor: pointer;
+}
+main .container_upload-image form button:hover {
+    background-color: var(--COLOR1);
+    color: var(--COLOR3);
+}
+main .container_favorite-cats {
+    display: flex;
+    flex-direction: column;
+    margin: 4rem 0 3rem;
+}
+main .container_favorite-cats h2 {
+    text-align: center;
+    font-size: 1.6rem;
+}
+main .container_favorite-cats div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 1.8rem;
+}
+main .container_favorite-cats section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1rem;
+}
+main .container_favorite-cats img {
+    width: 16rem;
+    height: 16rem;
+    object-fit: cover;
+    border-radius: 0.6rem 0.6rem 0 0;
+}
+main .container_favorite-cats button {
+    padding: 0.3rem;
+    background-color: var(--COLOR2);
+    border: black 0.1rem solid;
+    border-radius: 0 0 0.6rem 0.6rem;
+    font-size: 0.8rem;
+    font-family: var(--font);
+    font-weight: bold;
+    letter-spacing: 0.02rem;
+    color: var(--COLOR1);
+    cursor: pointer;
+}
+main .container_favorite-cats button:hover {
+    background-color: var(--COLOR1);
+    color: var(--COLOR3);
+}
+footer {
+    padding: 1.5rem 4rem;
+    background-color: var(--COLOR2);
+    color: var(--COLOR1);
+}
+footer section {
+    display: flex;
+    justify-content: space-between;
+}
